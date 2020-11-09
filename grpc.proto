@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option go_package = ".;grpc_test";
+
+package grpc_test;
+
+// The Team service definition.
+service GRPCTest {
+  rpc GetRequest (GetReq) returns (GetRsp) {}
+}
+
+message GetReq{
+  string a = 2;
+}
+message GetRsp{
+  string a = 1;
+}
