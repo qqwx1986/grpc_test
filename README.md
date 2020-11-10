@@ -1,7 +1,6 @@
 Build
 ```cassandraql
-cd main
-go build -o grpc_test
+go build 
 ```
 Start Server
 ```cassandraql

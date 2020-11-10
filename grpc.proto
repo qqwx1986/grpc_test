@@ -1,8 +1,8 @@
 syntax = "proto3";
 
-option go_package = ".;grpc_test";
+option go_package = ".;main";
 
-package grpc_test;
+package main;
 
 // The Team service definition.
 service GRPCTest {
@@ -10,8 +10,7 @@ service GRPCTest {
 }
 
 message GetReq{
-  string a = 2;
+  string cmd = 1;
 }
 message GetRsp{
-  string a = 1;
 }
